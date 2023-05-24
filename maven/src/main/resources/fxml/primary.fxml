@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="tbAlunos" prefHeight="747.0" prefWidth="911.0" style="-fx-background-color: #242426;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.trabalhoprofthiago.yagoprazim.maven.FXMLController">
+   <children>
+      <Label layoutX="39.0" layoutY="27.0" prefHeight="32.0" prefWidth="244.0" text="Gerenciador de Alunos" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tbGerenciar" layoutX="37.0" layoutY="73.0" prefHeight="380.0" prefWidth="867.0">
+        <columns>
+          <TableColumn fx:id="columnNome" prefWidth="343.0" text="Nome" />
+          <TableColumn fx:id="columnN1" prefWidth="135.0" text="Primeira Nota" />
+            <TableColumn fx:id="columnN2" prefWidth="124.0" text="Segunda Nota" />
+            <TableColumn fx:id="columnMedia" prefWidth="109.0" text="Média" />
+            <TableColumn fx:id="columnSituacao" prefWidth="155.0" text="Situação" />
+        </columns>
+      </TableView>
+      <Label layoutX="38.0" layoutY="465.0" prefHeight="36.0" prefWidth="111.0" text="Cadastro" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfNome" layoutX="37.0" layoutY="514.0" prefHeight="25.0" prefWidth="390.0" promptText="Nome" style=": ;" stylesheets="@../styles/Styles.css" />
+      <TextField fx:id="tfN1" layoutX="37.0" layoutY="569.0" prefHeight="25.0" prefWidth="390.0" promptText="Primeira Nota" style=": 2px;" stylesheets="@../styles/Styles.css" />
+      <TextField fx:id="tfN2" layoutX="37.0" layoutY="621.0" prefHeight="25.0" prefWidth="390.0" promptText="Segunda Nota" style=": ;" stylesheets="@../styles/Styles.css" />
+      <Button fx:id="gerar" layoutX="37.0" layoutY="690.0" mnemonicParsing="false" onAction="#adicionarAluno" prefHeight="32.0" prefWidth="92.0" style="-fx-background-radius: 15px;" text="Cadastrar">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Label fx:id="validNome" layoutX="39.0" layoutY="543.0" prefHeight="17.0" prefWidth="103.0" text="Informe um Nome" textFill="RED" />
+      <Label fx:id="validN1" layoutX="39.0" layoutY="598.0" prefHeight="17.0" prefWidth="103.0" text="Informe uma Nota" textFill="RED" />
+      <Label fx:id="validN2" layoutX="38.0" layoutY="649.0" prefHeight="17.0" prefWidth="103.0" text="Informe uma Nota" textFill="RED" />
+      <Label fx:id="valid2Nome" layoutX="439.0" layoutY="520.0" prefHeight="17.0" prefWidth="174.0" text="Nomes só podem conter letras!" textFill="RED">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="valid2N1" layoutX="439.0" layoutY="575.0" prefHeight="17.0" prefWidth="501.0" text="Notas não podem ser negativas, nem maiores que 10, nem conter letras! Se for decimal, use o '.'" textFill="RED">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="valid2N2" layoutX="439.0" layoutY="625.0" prefHeight="17.0" prefWidth="501.0" text="Notas não podem ser negativas, nem maiores que 10, nem conter letras! Se for decimal, use o '.'" textFill="RED">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

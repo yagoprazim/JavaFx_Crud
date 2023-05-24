@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Built-By: Yago
+Build-Jdk: 17.0.6
+Main-Class: br.com.trabalhoprofthiago.yagoprazim.maven.MainApp
+Created-By: Maven Integration for Eclipse
+
